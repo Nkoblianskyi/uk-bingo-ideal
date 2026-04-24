@@ -40,7 +40,7 @@ export function HeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: HeroSec
           <div className="space-y-1">
             <h1 className="text-lg lg:text-[40px] xl:text-[40px] 2xl:text-[40px] font-bold drop-shadow-lg">
               TOP <span className="text-red-500">UK</span>{" "}
-              <span className="text-amber-400">ONLINE BINGO</span>
+              <span className="text-amber-400">BINGO</span>
             </h1>
 
             <h2 className="text-[32px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] font-bold">
