@@ -4,9 +4,26 @@ import type React from "react"
 
 import { useState, useRef, useEffect } from "react"
 import { Star } from "lucide-react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import type { BettingSite } from "../types"
 import Link from "next/link"
+
+/** Sub-label under CTA: copy + UK flag on the right (same idea as licensed-market badges). */
+function UkLicensedCaption({ textClassName, flagPx }: { textClassName: string; flagPx: number }) {
+  return (
+    <div className="mt-1 flex items-center justify-center gap-1.5">
+      <span className={textClassName}>UK licensed</span>
+      <Image
+        src="/flag.png"
+        alt=""
+        width={flagPx}
+        height={flagPx}
+        className="shrink-0 rounded-full object-cover ring-1 ring-slate-300/80"
+      />
+    </div>
+  )
+}
 
 interface SiteCardProps {
   site: BettingSite
@@ -164,10 +181,10 @@ export function Card({ site, rank }: SiteCardProps) {
 
             {/* VISIT SITE - 13% */}
             <div className="flex-[0_0_13%] text-center flex flex-col justify-center items-center h-full pl-1">
-              <Button className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-1 xl:px-2 py-2 rounded-lg text-xs xl:text-sm w-full max-w-[120px] h-[38px] xl:h-[45px] mb-1 transition-colors border border-amber-300/80 shadow-sm">
+              <Button className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-1 xl:px-2 py-2 rounded-full text-xs xl:text-sm w-full max-w-[120px] h-[38px] xl:h-[45px] transition-colors border border-amber-300/80 shadow-sm">
                 GET BONUS
               </Button>
-              <div className="text-xs text-gray-500 underline">Visit {site.name}</div>
+              <UkLicensedCaption textClassName="text-[11px] xl:text-xs text-slate-600 font-medium" flagPx={16} />
             </div>
           </div>
         </Link>
@@ -253,10 +270,11 @@ export function Card({ site, rank }: SiteCardProps) {
               </div>
 
               {/* Button - 13% */}
-              <div className="flex-[0_0_13%] text-center pl-1">
-                <Button className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-2 py-2 rounded-lg text-xs w-full max-w-[100px] mx-auto transition-colors border border-amber-300/80">
+              <div className="flex-[0_0_13%] flex flex-col items-center justify-center text-center pl-1">
+                <Button className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-2 py-2 rounded-full text-xs w-full max-w-[100px] mx-auto transition-colors border border-amber-300/80">
                   GET BONUS
                 </Button>
+                <UkLicensedCaption textClassName="text-[10px] text-slate-600 font-medium" flagPx={14} />
               </div>
             </div>
           </div>
@@ -349,11 +367,12 @@ export function Card({ site, rank }: SiteCardProps) {
                 <div className="text-lg font-bold text-gray-900 leading-tight text-nowrap">{site.welcomeOffer}</div>
               </div>
 
-              {/* Button - more square */}
-              <div className="flex justify-center mt-2">
-                <Button className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-3 py-1.5 rounded-lg text-sm transition-colors w-full border border-amber-300/80">
+              {/* Button + UK licensed row (flag right, like reference) */}
+              <div className="flex flex-col items-center justify-center mt-2 w-full">
+                <Button className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-3 py-1.5 rounded-full text-sm transition-colors w-full border border-amber-300/80">
                   GET BONUS
                 </Button>
+                <UkLicensedCaption textClassName="text-[10px] text-slate-700 font-medium" flagPx={14} />
               </div>
             </div>
           </div>

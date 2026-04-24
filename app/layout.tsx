@@ -7,8 +7,11 @@ import { Header } from "../components/header"
 
 const mulish = Lato({ subsets: ["latin"], weight: ["400", "700"] })
 
+/** Canonical site origin — used by `metadataBase`, `sitemap.ts`, and `robots.ts`. */
+export const SITE_URL = "https://bestbritishbettingsites.co.uk"
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bestbritishbettingsites.co.uk"),
+  metadataBase: new URL(SITE_URL),
   title: "Best UK Bingo — Top licensed bingo sites & room offers",
   description:
     "Compare the best UK online bingo rooms: UKGC-licensed operators, welcome bonuses in GBP, free tickets, game variety, and safer gambling resources for players in Great Britain.",
