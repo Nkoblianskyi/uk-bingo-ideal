@@ -102,7 +102,7 @@ export default function PrivacyPolicyPage() {
               </p>
             </section>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   )

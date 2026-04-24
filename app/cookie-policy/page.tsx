@@ -93,7 +93,7 @@ export default function CookiePolicyPage() {
               </p>
             </section>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   )
