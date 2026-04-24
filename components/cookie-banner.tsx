@@ -27,7 +27,7 @@ export function CookieBanner() {
   if (!isVisible) return null
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 shadow-2xl border-t border-amber-600/30 bg-slate-950 text-white">
+    <div className="fixed bottom-0 left-0 right-0 z-50 shadow-2xl border-t border-bingo-pink/35 bg-slate-950 text-white">
       <div className="flex h-1 w-full" aria-hidden>
         <div className="w-1/3 bg-slate-800" />
         <div className="w-1/3 bg-white" />
@@ -38,11 +38,11 @@ export function CookieBanner() {
           <p className="text-sm text-slate-200">
             We use cookies to improve your experience and to understand how visitors use our UK bingo comparison pages.
             By continuing, you agree to our use of cookies as described in our policies.
-            <Link href="/privacy-policy" className="text-amber-400 hover:text-amber-300 underline underline-offset-2 ml-1">
+            <Link href="/privacy-policy" className="text-bingo-pink hover:text-bingo-purple-light underline underline-offset-2 ml-1">
               Privacy Policy
             </Link>
             <span className="text-slate-500"> · </span>
-            <Link href="/cookie-policy" className="text-amber-400 hover:text-amber-300 underline underline-offset-2">
+            <Link href="/cookie-policy" className="text-bingo-pink hover:text-bingo-purple-light underline underline-offset-2">
               Cookie Policy
             </Link>
           </p>
@@ -57,7 +57,7 @@ export function CookieBanner() {
           </Button>
           <Button
             onClick={handleAccept}
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold shadow-md border border-amber-300/80"
+            className="bg-bingo-pink hover:bg-bingo-pink-hover text-white font-semibold shadow-md border border-bingo-purple-light/50"
           >
             Accept cookies
           </Button>

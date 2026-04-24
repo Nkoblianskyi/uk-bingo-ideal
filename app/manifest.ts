@@ -1,16 +1,17 @@
 import type { MetadataRoute } from "next"
+import { SITE_DISPLAY_NAME, SITE_DOMAIN } from "@/lib/site"
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Bedste Danske Casinosider - Bedste danske casinoer",
-    short_name: "Bedste Danske Casinosider",
+    name: `${SITE_DISPLAY_NAME} — ${SITE_DOMAIN}`,
+    short_name: SITE_DISPLAY_NAME,
     description:
-      "Uafhængig guide til de bedste danske casinoer med licens fra Spillemyndigheden. 18+.",
+      "Independent guide to licensed UK online bingo rooms, offers, and safer play. 18+ UK only.",
     start_url: "/",
     display: "standalone",
     background_color: "#0a0a0a",
-    theme_color: "#c8102e",
-    lang: "da-DK",
+    theme_color: "#e91e63",
+    lang: "en-GB",
     dir: "ltr",
     categories: ["entertainment", "lifestyle"],
     icons: [

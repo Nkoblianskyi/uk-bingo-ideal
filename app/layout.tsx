@@ -4,15 +4,13 @@ import { Lato } from "next/font/google"
 import "./globals.css"
 import { Footer } from "../components/footer"
 import { Header } from "../components/header"
+import { SITE_DISPLAY_NAME, SITE_URL } from "@/lib/site"
 
 const mulish = Lato({ subsets: ["latin"], weight: ["400", "700"] })
 
-/** Canonical site origin — used by `metadataBase`, `sitemap.ts`, and `robots.ts`. */
-export const SITE_URL = "https://bestbritishbettingsites.co.uk"
-
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Best UK Bingo — Top licensed bingo sites & room offers",
+  title: `${SITE_DISPLAY_NAME} — Top licensed UK bingo rooms & offers`,
   description:
     "Compare the best UK online bingo rooms: UKGC-licensed operators, welcome bonuses in GBP, free tickets, game variety, and safer gambling resources for players in Great Britain.",
 }

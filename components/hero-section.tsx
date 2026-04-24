@@ -40,7 +40,7 @@ export function HeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: HeroSec
           <div className="space-y-1">
             <h1 className="text-lg lg:text-[40px] xl:text-[40px] 2xl:text-[40px] font-bold drop-shadow-lg">
               TOP <span className="text-red-500">UK</span>{" "}
-              <span className="text-amber-400">BINGO</span>
+              <span className="text-bingo-pink">BINGO</span>
             </h1>
 
             <h2 className="text-[32px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] font-bold">
@@ -83,11 +83,11 @@ export function HeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: HeroSec
 
             <div className="text-[9px] lg:text-[10px] xl:text-xs leading-tight text-left">
               Play responsibly. Wagering and T&Cs apply.
-              <button onClick={onAdvertiserModalOpen} className="underline ml-1 hover:text-amber-300 transition-colors">
+              <button onClick={onAdvertiserModalOpen} className="underline ml-1 hover:text-bingo-purple-light transition-colors">
                 Advertiser Disclosure
               </button>
               <span> | </span>
-              <button onClick={onTermsModalOpen} className="underline hover:text-amber-300 transition-colors">
+              <button onClick={onTermsModalOpen} className="underline hover:text-bingo-purple-light transition-colors">
                 18+ T&Cs Apply
               </button>
             </div>
@@ -103,7 +103,7 @@ export function HeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: HeroSec
         <div className="h-full flex flex-col justify-between text-center px-4 md:px-6 py-3">
           <div className="space-y-1">
             <h1 className="text-xl md:text-2xl font-bold">
-              TOP <span className="text-red-500">UK</span> <span className="text-amber-400">ONLINE BINGO</span>
+              TOP <span className="text-red-500">UK</span> <span className="text-bingo-pink">ONLINE BINGO</span>
             </h1>
             <h2 className="text-lg md:text-xl font-bold">REVIEWED FOR {getCurrentMonthYear()}</h2>
           </div>
@@ -155,7 +155,7 @@ export function HeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: HeroSec
             {/* Main titles - COMPACT */}
             <div className="mb-1">
               <h1 className="text-base font-bold drop-shadow-lg leading-tight">
-                TOP <span className="text-red-500">UK</span> <span className="text-amber-400">BINGO</span>
+                TOP <span className="text-red-500">UK</span> <span className="text-bingo-pink">BINGO</span>
               </h1>
 
             </div>
@@ -184,11 +184,11 @@ export function HeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: HeroSec
             <div className="text-[6px] leading-tight">
               <div>Play responsibly. Wagering and T&Cs apply.</div>
               <div>
-                <button onClick={onAdvertiserModalOpen} className="underline hover:text-amber-300">
+                <button onClick={onAdvertiserModalOpen} className="underline hover:text-bingo-purple-light">
                   Advertiser Disclosure
                 </button>
                 <span> | </span>
-                <button onClick={onTermsModalOpen} className="underline hover:text-amber-300">
+                <button onClick={onTermsModalOpen} className="underline hover:text-bingo-purple-light">
                   18+ T&Cs Apply
                 </button>
               </div>

@@ -7,7 +7,7 @@ export function InfoSections() {
         <div className="absolute inset-0 bg-black/80"></div>
 
         <div className="relative z-10 px-4 py-6 lg:py-8 text-white flex flex-col items-center text-center">
-          <h2 className="text-xl lg:text-2xl font-bold mb-4 text-amber-400">
+          <h2 className="text-xl lg:text-2xl font-bold mb-4 text-bingo-pink">
             Your guide to choosing a UK online bingo room
           </h2>
 
@@ -19,7 +19,7 @@ export function InfoSections() {
             </p>
 
             <div>
-              <h3 className="text-lg font-bold mb-2 text-amber-400">How we review operators</h3>
+              <h3 className="text-lg font-bold mb-2 text-bingo-pink">How we review operators</h3>
               <p className="text-gray-200 leading-relaxed text-sm">
                 We look at factors that matter to UK players: clarity of offers under UK advertising standards, game
                 variety (including 90-ball and 75-ball where available), chat and community features, payments and
@@ -28,7 +28,7 @@ export function InfoSections() {
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-2 text-amber-400">Finding the right fit</h3>
+              <h3 className="text-lg font-bold mb-2 text-bingo-pink">Finding the right fit</h3>
               <p className="text-gray-200 leading-relaxed text-sm mb-2">
                 If you play evenings only, check peak-room traffic and ticket bundles. If you mostly play on your
                 phone, prioritise a stable app, quick ticket purchase, and readable cards.
@@ -40,7 +40,7 @@ export function InfoSections() {
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-2 text-amber-400">Welcome offers and promotions</h3>
+              <h3 className="text-lg font-bold mb-2 text-bingo-pink">Welcome offers and promotions</h3>
               <p className="text-gray-200 leading-relaxed text-sm">
                 UK promotions are tightly regulated: always read the operator&apos;s full terms (wagering or game
                 weighting if applicable, max win caps, payment exclusions, expiry). Our summaries are for comparison
@@ -49,7 +49,7 @@ export function InfoSections() {
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-2 text-amber-400">Regulation in the United Kingdom</h3>
+              <h3 className="text-lg font-bold mb-2 text-bingo-pink">Regulation in the United Kingdom</h3>
               <p className="text-gray-200 leading-relaxed text-sm">
                 Operators serving customers in Great Britain normally need a licence from the Gambling Commission
                 (UKGC). That covers fairness, age checks, safer gambling messaging, and how offers must be presented.
@@ -58,7 +58,7 @@ export function InfoSections() {
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-2 text-amber-400">What UK players often look for</h3>
+              <h3 className="text-lg font-bold mb-2 text-bingo-pink">What UK players often look for</h3>
               <p className="text-gray-200 leading-relaxed text-sm">
                 Pre-buy for big linked games, BOGOF ticket deals where available, loyalty perks, and side slots or
                 instant games between calls. The best rooms pair variety with clear limits and quick access to reality
@@ -67,7 +67,7 @@ export function InfoSections() {
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-2 text-amber-400">Playing responsibly</h3>
+              <h3 className="text-lg font-bold mb-2 text-bingo-pink">Playing responsibly</h3>
               <p className="text-gray-200 leading-relaxed text-sm">
                 Treat bingo as entertainment, not a way to make money. Use deposit and loss limits, take breaks, and
                 never chase losses. If play stops feeling like a choice, organisations such as GambleAware and GamCare can

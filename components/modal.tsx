@@ -43,7 +43,9 @@ export function Modal({ bettingSites, casinoSites }: Top3ModalProps) {
         {/* Title */}
         <div className="text-center mb-2 md:mb-2">
           <h2 className="text-xl md:text-2xl lg:text-4xl font-bold text-white">
-            Best <span className="text-red-500">UK</span> <span className="text-amber-400">Bingo</span> picks
+            <span className="text-bingo-pink">Best</span> <span className="text-white">British</span>{" "}
+            <span className="text-bingo-pink">Bingo</span> <span className="text-white">Sites</span>
+            <span className="text-white"> — top picks</span>
           </h2>
         </div>
 
@@ -56,7 +58,7 @@ export function Modal({ bettingSites, casinoSites }: Top3ModalProps) {
               <div
                 key={site?.id || index}
                 className={`flex min-h-0 flex-none flex-col overflow-hidden rounded-xl ${isCenter
-                    ? "relative z-20 w-[392px] border-4 border-amber-500 shadow-2xl shadow-amber-500/35 xl:w-[424px]"
+                    ? "relative z-20 w-[392px] border-4 border-bingo-pink shadow-2xl shadow-bingo-card xl:w-[424px]"
                     : "relative z-10 w-[228px] border-4 border-slate-200 xl:w-[240px]"
                   }`}
               >
@@ -86,7 +88,7 @@ export function Modal({ bettingSites, casinoSites }: Top3ModalProps) {
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={i}
-                        className={`fill-amber-400 text-amber-400 ${isCenter ? "h-6 w-6" : "h-4 w-4"}`}
+                        className={`fill-bingo-purple-light text-bingo-purple-light ${isCenter ? "h-6 w-6" : "h-4 w-4"}`}
                       />
                     ))}
                   </div>
@@ -103,7 +105,7 @@ export function Modal({ bettingSites, casinoSites }: Top3ModalProps) {
                   <div className="mb-2 shrink-0">
                     <Link href={site?.link || "#"} target="_blank" rel="noopener noreferrer">
                       <Button
-                        className={`w-full rounded-lg border border-amber-300/80 bg-amber-500 font-bold text-slate-900 hover:bg-amber-400 ${isCenter ? "px-4 py-3 text-base" : "px-3 py-2 text-xs"}`}
+                        className={`w-full rounded-lg border border-bingo-purple-light/50 bg-bingo-pink font-bold text-white hover:bg-bingo-pink-hover ${isCenter ? "px-4 py-3 text-base" : "px-3 py-2 text-xs"}`}
                       >
                         GET BONUS
                       </Button>
@@ -130,7 +132,7 @@ export function Modal({ bettingSites, casinoSites }: Top3ModalProps) {
               <div
                 key={site?.id || index}
                 className={`flex min-h-0 flex-none flex-col overflow-hidden rounded-xl ${isCenter
-                    ? "relative z-20 w-[46%] max-w-[280px] min-w-[220px] border-4 border-amber-500 shadow-2xl shadow-amber-500/35"
+                    ? "relative z-20 w-[46%] max-w-[280px] min-w-[220px] border-4 border-bingo-pink shadow-2xl shadow-bingo-card"
                     : "relative z-10 w-[27%] max-w-[168px] min-w-[150px] border-4 border-slate-200"
                   }`}
               >
@@ -159,7 +161,7 @@ export function Modal({ bettingSites, casinoSites }: Top3ModalProps) {
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={i}
-                        className={`fill-amber-400 text-amber-400 ${isCenter ? "h-3.5 w-3.5" : "h-3 w-3"}`}
+                        className={`fill-bingo-purple-light text-bingo-purple-light ${isCenter ? "h-3.5 w-3.5" : "h-3 w-3"}`}
                       />
                     ))}
                   </div>
@@ -172,7 +174,7 @@ export function Modal({ bettingSites, casinoSites }: Top3ModalProps) {
                   <div className="mb-1 shrink-0">
                     <Link href={site?.link || "#"} target="_blank" rel="noopener noreferrer">
                       <Button
-                        className={`w-full rounded-lg border border-amber-300/80 bg-amber-500 font-bold text-slate-900 hover:bg-amber-400 ${isCenter ? "px-3 py-2 text-xs" : "px-2 py-1.5 text-[10px]"}`}
+                        className={`w-full rounded-lg border border-bingo-purple-light/50 bg-bingo-pink font-bold text-white hover:bg-bingo-pink-hover ${isCenter ? "px-3 py-2 text-xs" : "px-2 py-1.5 text-[10px]"}`}
                       >
                         GET BONUS
                       </Button>

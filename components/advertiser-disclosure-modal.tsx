@@ -2,6 +2,7 @@
 
 import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { SITE_DISPLAY_NAME } from "@/lib/site"
 
 interface AdvertiserDisclosureModalProps {
   isOpen: boolean
@@ -30,9 +31,8 @@ export function AdvertiserDisclosureModal({ isOpen, onClose }: AdvertiserDisclos
             <div>
               <h3 className="text-base sm:text-lg font-bold mb-2">How We Make Money</h3>
               <p className="text-sm sm:text-base text-gray-700">
-                bestbritishbettingsites is an independent comparison website that helps users find reputable betting
-                sites in the United Kingdom. We may receive compensation when you click on links to operators featured on
-                our website.
+                {SITE_DISPLAY_NAME} is an independent comparison website that helps users find reputable UK online bingo
+                rooms. We may receive compensation when you click on links to operators featured on our website.
               </p>
             </div>
 
@@ -40,12 +40,12 @@ export function AdvertiserDisclosureModal({ isOpen, onClose }: AdvertiserDisclos
               <h3 className="text-base sm:text-lg font-bold mb-2">Our Commitment to You</h3>
               <p className="text-sm sm:text-base text-gray-700 mb-2">
                 This compensation does not influence our rankings, reviews, or recommendations. Our editorial team
-                maintains complete independence in evaluating betting sites based on factors such as:
+                maintains complete independence in evaluating bingo sites based on factors such as:
               </p>
               <ul className="text-sm sm:text-base text-gray-700 list-disc list-inside space-y-1">
                 <li>Licensing and regulation</li>
                 <li>Security and safety measures</li>
-                <li>Betting odds and markets</li>
+                <li>Games, rooms, and ticket value</li>
                 <li>Welcome bonuses and promotions</li>
                 <li>Customer service quality</li>
                 <li>Payment methods and withdrawal speeds</li>
@@ -55,9 +55,9 @@ export function AdvertiserDisclosureModal({ isOpen, onClose }: AdvertiserDisclos
             <div>
               <h3 className="text-base sm:text-lg font-bold mb-2">Transparency</h3>
               <p className="text-sm sm:text-base text-gray-700">
-                We believe in complete transparency with our users. All betting sites featured on our platform are
-                clearly marked, and we only recommend operators that hold appropriate licensing for UK customers (for
-                example Gambling Commission licensing where required) or otherwise meet clear regulatory standards.
+                We believe in complete transparency with our users. All bingo sites featured on our platform are clearly
+                marked, and we only recommend operators that hold appropriate licensing for UK customers (for example
+                Gambling Commission licensing where required) or otherwise meet clear regulatory standards.
               </p>
             </div>
 
@@ -65,8 +65,8 @@ export function AdvertiserDisclosureModal({ isOpen, onClose }: AdvertiserDisclos
               <h3 className="text-base sm:text-lg font-bold mb-2">Your Responsibility</h3>
               <p className="text-sm sm:text-base text-gray-700">
                 While we strive to provide accurate and up-to-date information, it is your responsibility to verify all
-                terms and conditions directly with the betting operator before placing any bets. Always gamble
-                responsibly and within your means.
+                terms and conditions directly with the bingo operator before you play. Always gamble responsibly and
+                within your means.
               </p>
             </div>
           </div>

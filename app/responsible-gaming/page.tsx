@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { ArrowLeft, Shield, Clock, AlertTriangle, Phone, Globe } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { SITE_DISPLAY_NAME } from "@/lib/site"
 
 export default function ResponsibleGamingPage() {
   return (
@@ -213,12 +214,12 @@ export default function ResponsibleGamingPage() {
           </ul>
             </section>
 
-          <div className="rounded-lg border-l-4 border-yellow-400 bg-yellow-50 p-4 sm:p-5">
-            <h3 className="text-yellow-800 font-bold mb-3">Remember</h3>
-            <p className="text-yellow-700 mb-2">
+          <div className="rounded-lg border-l-4 border-bingo-pink bg-bingo-pink-soft p-4 sm:p-5">
+            <h3 className="text-bingo-purple-dark font-bold mb-3">Remember</h3>
+            <p className="text-slate-800 mb-2">
               Gambling addiction is a recognized medical condition, not a moral failing or lack of willpower.
             </p>
-            <p className="text-yellow-700">
+            <p className="text-slate-800">
               Recovery is possible with the right support and treatment. The first step is acknowledging there's a
               problem and asking for help.
             </p>
@@ -227,7 +228,7 @@ export default function ResponsibleGamingPage() {
             <section>
               <h2 className="mb-3 text-xl font-bold text-slate-900 sm:text-2xl">Our Commitment</h2>
               <p className="mb-2">
-            At bestbritishbettingsites, we are committed to promoting responsible gambling. We only recommend operators
+            At {SITE_DISPLAY_NAME}, we are committed to promoting responsible gambling. We only recommend operators
             that:
               </p>
           <ul className="list-disc space-y-1 pl-5">

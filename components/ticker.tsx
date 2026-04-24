@@ -30,9 +30,9 @@ export function Ticker() {
         </div>
       </div>
 
-      <div className="absolute left-0 top-0 bottom-0 bg-slate-900 text-white font-bold px-3 sm:px-4 py-2 text-sm rounded-r-full z-10 flex items-center border-r-2 border-amber-500 shadow-sm">
+      <div className="absolute left-0 top-0 bottom-0 bg-slate-900 text-white font-bold px-3 sm:px-4 py-2 text-sm rounded-r-full z-10 flex items-center border-r-2 border-bingo-pink shadow-sm">
         <div className="text-center leading-tight">
-          <div className="text-[10px] sm:text-xs text-amber-400">UK</div>
+          <div className="text-[10px] sm:text-xs text-bingo-pink">UK</div>
           <div className="text-[10px] sm:text-xs">Bingo</div>
         </div>
       </div>

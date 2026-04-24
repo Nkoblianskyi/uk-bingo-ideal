@@ -16,7 +16,7 @@ export function HorizontalBanner({ banner }: HorizontalBannerProps) {
       className="group block transition-all duration-300"
     >
       {/* Mobile layout */}
-      <div className="relative overflow-hidden rounded-2xl border-2 border-yellow-400/85 shadow-[0_12px_28px_rgba(0,0,0,0.45)] min-h-[300px] w-full cursor-pointer transition-all duration-300 group-hover:shadow-[0_18px_34px_rgba(0,0,0,0.52)] group-hover:-translate-y-0.5 md:hidden">
+      <div className="relative overflow-hidden rounded-2xl border-2 border-bingo-pink/80 shadow-[0_12px_28px_rgba(0,0,0,0.45)] min-h-[300px] w-full cursor-pointer transition-all duration-300 group-hover:shadow-[0_18px_34px_rgba(233,30,99,0.35)] group-hover:-translate-y-0.5 md:hidden">
         <Image
           src={banner.mobileBackgroundImage || banner.backgroundImage || "/placeholder.svg"}
           alt="Banner"
@@ -31,12 +31,12 @@ export function HorizontalBanner({ banner }: HorizontalBannerProps) {
           style={{ background: "radial-gradient(circle at 50% 44%, rgba(255,255,255,0.22), rgba(255,255,255,0) 58%)" }}
         />
         <div className="relative z-10 flex h-full flex-col">
-          <div className="h-[44px] bg-slate-900/90 border-b border-yellow-400/70 flex items-center justify-center">
+          <div className="h-[44px] bg-slate-900/90 border-b border-bingo-pink/70 flex items-center justify-center">
             <span className="text-white font-black tracking-[0.06em] text-[16px]">SPECIAL OFFER</span>
           </div>
 
           <div className="px-6 pt-2">
-            <div className="border-t-2 border-dashed border-yellow-400/70" />
+            <div className="border-t-2 border-dashed border-bingo-pink/70" />
           </div>
 
           <div className="flex-1 flex items-center justify-center px-3 py-3">
@@ -77,7 +77,7 @@ export function HorizontalBanner({ banner }: HorizontalBannerProps) {
               </div>
 
               <div className="mt-1 flex items-center justify-center">
-                <button className="bg-gradient-to-b from-amber-300 to-amber-500 hover:from-amber-200 hover:to-amber-400 text-slate-900 font-extrabold px-8 py-2.5 rounded-lg text-[14px] transition-colors shadow-[0_8px_18px_rgba(0,0,0,0.45)] whitespace-nowrap min-w-[170px] border border-amber-100/90">
+                <button className="bg-gradient-to-b from-bingo-purple-light to-bingo-pink hover:from-bingo-pink hover:to-bingo-pink-hover text-white font-extrabold px-8 py-2.5 rounded-lg text-[14px] transition-colors shadow-[0_8px_18px_rgba(0,0,0,0.45)] whitespace-nowrap min-w-[170px] border border-white/25">
                   CLAIM BONUS
                 </button>
               </div>
@@ -85,10 +85,10 @@ export function HorizontalBanner({ banner }: HorizontalBannerProps) {
           </div>
 
           <div className="px-6 pb-1">
-            <div className="border-t-2 border-dashed border-yellow-400/70" />
+            <div className="border-t-2 border-dashed border-bingo-pink/70" />
           </div>
 
-          <div className="bg-black/72 border-t border-yellow-400/55 px-3 py-2.5">
+          <div className="bg-black/72 border-t border-bingo-pink/50 px-3 py-2.5">
             <p className="text-[10px] text-white leading-snug text-center break-words">{banner.terms || ""}</p>
           </div>
         </div>
@@ -111,7 +111,7 @@ export function HorizontalBanner({ banner }: HorizontalBannerProps) {
             <div
               className="h-full flex items-center justify-center w-5 sm:w-5 md:w-6 lg:w-8 xl:w-10 relative flex-shrink-0"
               style={{
-                background: "linear-gradient(135deg, #183596 0%, #4488f7 100%)",
+                background: "linear-gradient(135deg, #4a148c 0%, #7b1fa2 45%, #e91e63 100%)",
                 borderRadius: "0 8px 8px 0",
               }}
             >
@@ -178,7 +178,7 @@ export function HorizontalBanner({ banner }: HorizontalBannerProps) {
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <button className="bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold px-3 py-1 sm:px-[24px] md:px-[32px] lg:px-[36px] xl:px-[44px] sm:py-[6px] md:py-[8px] lg:py-[10px] xl:py-[12px] rounded-lg text-[8px] sm:text-[12px] md:text-[14px] lg:text-[14px] xl:text-[16px] transition-colors shadow-lg whitespace-nowrap min-w-[70px] sm:min-w-[120px] md:min-w-[140px] lg:min-w-[140px] xl:min-w-[160px]">
+                  <button className="bg-bingo-pink hover:bg-bingo-pink-hover text-white font-bold px-3 py-1 sm:px-[24px] md:px-[32px] lg:px-[36px] xl:px-[44px] sm:py-[6px] md:py-[8px] lg:py-[10px] xl:py-[12px] rounded-lg text-[8px] sm:text-[12px] md:text-[14px] lg:text-[14px] xl:text-[16px] transition-colors shadow-lg whitespace-nowrap min-w-[70px] sm:min-w-[120px] md:min-w-[140px] lg:min-w-[140px] xl:min-w-[160px] border border-bingo-purple-light/40">
                     CLAIM BONUS
                   </button>
                 </div>
@@ -186,7 +186,7 @@ export function HorizontalBanner({ banner }: HorizontalBannerProps) {
             </div>
           </div>
 
-          <div className="absolute left-0 right-0 bottom-0 bg-slate-900/92 border-t border-yellow-400/60 px-3 sm:px-4 md:px-5 py-2">
+          <div className="absolute left-0 right-0 bottom-0 bg-slate-900/92 border-t border-bingo-pink/55 px-3 sm:px-4 md:px-5 py-2">
             <p className="text-[10px] sm:text-[11px] md:text-[12px] text-white/95 leading-snug text-center break-words">
               {banner.terms || ""}
             </p>

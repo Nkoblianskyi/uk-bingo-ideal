@@ -63,6 +63,19 @@ module.exports = {
         "green-hover": "rgb(22, 163, 74)",
         "green-light": "rgb(74, 222, 128)",
         "green-dark": "rgb(21, 128, 61)",
+        // UK bingo hall — pink (#e91e63) + purple
+        bingo: {
+          pink: "#e91e63",
+          "pink-hover": "#ec407a",
+          "pink-soft": "#fce4ec",
+          purple: "#7b1fa2",
+          "purple-light": "#ba68c8",
+          "purple-dark": "#4a148c",
+        },
+      },
+      boxShadow: {
+        "bingo-card":
+          "0 25px 50px -12px rgba(233, 30, 99, 0.32), 0 10px 20px -10px rgba(123, 31, 162, 0.2)",
       },
       borderRadius: {
         lg: "var(--radius)",

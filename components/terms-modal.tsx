@@ -2,6 +2,7 @@
 
 import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { SITE_DISPLAY_NAME } from "@/lib/site"
 
 interface TermsModalProps {
   isOpen: boolean
@@ -30,8 +31,8 @@ export function TermsModal({ isOpen, onClose }: TermsModalProps) {
             <div>
               <h3 className="text-base sm:text-lg font-bold mb-2">General Terms</h3>
               <p className="text-sm sm:text-base text-gray-700">
-                By using bestbritishbettingsites, you agree to comply with and be bound by the following terms and
-                conditions. These terms apply to all users of our website and services.
+                By using {SITE_DISPLAY_NAME}, you agree to comply with and be bound by the following terms and conditions.
+                These terms apply to all users of our website and services.
               </p>
             </div>
 
@@ -60,7 +61,7 @@ export function TermsModal({ isOpen, onClose }: TermsModalProps) {
             <div>
               <h3 className="text-base sm:text-lg font-bold mb-2">Information Accuracy</h3>
               <p className="text-sm sm:text-base text-gray-700">
-                While we strive to provide accurate and up-to-date information about betting sites, bonuses, and
+                While we strive to provide accurate and up-to-date information about bingo sites, bonuses, and
                 promotions, we cannot guarantee the accuracy of all content. Terms and conditions may change without
                 notice.
               </p>
@@ -69,7 +70,7 @@ export function TermsModal({ isOpen, onClose }: TermsModalProps) {
             <div>
               <h3 className="text-base sm:text-lg font-bold mb-2">Third-Party Links</h3>
               <p className="text-sm sm:text-base text-gray-700">
-                Our website contains links to third-party betting sites. We are not responsible for the content, terms,
+                Our website contains links to third-party bingo operators. We are not responsible for the content, terms,
                 or practices of these external sites. Always review their terms and conditions before use.
               </p>
             </div>
@@ -77,7 +78,7 @@ export function TermsModal({ isOpen, onClose }: TermsModalProps) {
             <div>
               <h3 className="text-base sm:text-lg font-bold mb-2">Limitation of Liability</h3>
               <p className="text-sm sm:text-base text-gray-700">
-                bestbritishbettingsites shall not be liable for any direct, indirect, incidental, or consequential damages
+                {SITE_DISPLAY_NAME} shall not be liable for any direct, indirect, incidental, or consequential damages
                 arising from your use of this website or the information contained herein.
               </p>
             </div>

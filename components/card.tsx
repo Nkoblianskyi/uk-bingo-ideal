@@ -40,7 +40,7 @@ export function Card({ site, rank }: SiteCardProps) {
   // Determine background color based on rank (alternating)
   const isEvenRank = rank % 2 === 0
   const cardBgColor = isEvenRank ? "bg-gray-50" : "bg-white"
-  const topRankBorder = rank === 1 ? "border-4 border-amber-500" : "border border-slate-200"
+  const topRankBorder = rank === 1 ? "border-4 border-bingo-pink" : "border border-slate-200"
 
   useEffect(() => {
     // Mobile breakpoint check
@@ -88,7 +88,7 @@ export function Card({ site, rank }: SiteCardProps) {
     <div className="block">
       {/* Table header — first row only (desktop/tablet) */}
       {rank === 1 && (
-        <div className="hidden md:block bg-slate-900 text-white rounded-xl overflow-hidden mb-2 border border-amber-500/30">
+        <div className="hidden md:block bg-slate-900 text-white rounded-xl overflow-hidden mb-2 border border-bingo-pink/30">
           <div className="h-[40px] flex items-center px-6">
             {/* BINGO SITE - 30% */}
             <div className="flex-[0_0_30%] text-center pr-2">
@@ -124,13 +124,13 @@ export function Card({ site, rank }: SiteCardProps) {
       >
         <Link href={site.link} target="_blank" rel="noopener noreferrer" className="block">
           {/* Rank badge */}
-          <div className="absolute top-0 left-0 bg-slate-900 text-white px-3 py-1 rounded-tl-xl rounded-bl-md text-sm font-bold z-10 ring-2 ring-amber-500/90">
+          <div className="absolute top-0 left-0 bg-slate-900 text-white px-3 py-1 rounded-tl-xl rounded-bl-md text-sm font-bold z-10 ring-2 ring-bingo-pink/90">
             #{rank}
           </div>
 
           {/* Optional promo badge */}
           {shouldShowSpecialBadge && (
-            <div className="absolute top-0 left-12 bg-amber-500 text-slate-900 px-3 py-1 rounded-tr-xl rounded-br-md text-sm font-bold z-10">
+            <div className="absolute top-0 left-12 bg-bingo-purple text-white px-3 py-1 rounded-tr-xl rounded-br-md text-sm font-bold z-10">
               {getSpecialBadgeText()}
             </div>
           )}
@@ -165,7 +165,7 @@ export function Card({ site, rank }: SiteCardProps) {
                   <Star
                     key={i}
                     className={`w-4 xl:w-5 h-4 xl:h-5 ${
-                      i < Math.floor(site.rating) ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
+                      i < Math.floor(site.rating) ? "fill-bingo-pink text-bingo-pink" : "text-gray-300"
                     }`}
                   />
                 ))}
@@ -174,14 +174,14 @@ export function Card({ site, rank }: SiteCardProps) {
 
             {/* SCORE - 12% */}
             <div className="flex-[0_0_12%] text-center flex flex-col justify-center h-full px-1">
-              <div className="text-[44px] xl:text-[56px] font-bold leading-none text-amber-500 tabular-nums">
+              <div className="text-[44px] xl:text-[56px] font-bold leading-none text-bingo-pink tabular-nums">
                 {site.rating.toFixed(1)}
               </div>
             </div>
 
             {/* VISIT SITE - 13% */}
             <div className="flex-[0_0_13%] text-center flex flex-col justify-center items-center h-full pl-1">
-              <Button className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-1 xl:px-2 py-2 rounded-full text-xs xl:text-sm w-full max-w-[120px] h-[38px] xl:h-[45px] transition-colors border border-amber-300/80 shadow-sm">
+              <Button className="bg-bingo-pink hover:bg-bingo-pink-hover text-white font-bold px-1 xl:px-2 py-2 rounded-full text-xs xl:text-sm w-full max-w-[120px] h-[38px] xl:h-[45px] transition-colors border border-bingo-purple-light/50 shadow-sm">
                 GET BONUS
               </Button>
               <UkLicensedCaption textClassName="text-[11px] xl:text-xs text-slate-600 font-medium" flagPx={16} />
@@ -198,7 +198,7 @@ export function Card({ site, rank }: SiteCardProps) {
             {showReadMore && (
               <button
                 onClick={handleTermsClick}
-                className="text-gray-500 hover:text-amber-800 underline mt-1 text-xs font-medium"
+                className="text-gray-500 hover:text-bingo-purple-dark underline mt-1 text-xs font-medium"
               >
                 {isTermsExpanded ? "Read less" : "Read more"}
               </button>
@@ -213,13 +213,13 @@ export function Card({ site, rank }: SiteCardProps) {
       >
         <Link href={site.link} target="_blank" rel="noopener noreferrer" className="block">
           {/* Rank badge */}
-          <div className="absolute top-0 left-0 bg-slate-900 text-white px-2 py-1 rounded-tl-xl rounded-bl-md text-xs font-bold z-10 ring-2 ring-amber-500/90">
+          <div className="absolute top-0 left-0 bg-slate-900 text-white px-2 py-1 rounded-tl-xl rounded-bl-md text-xs font-bold z-10 ring-2 ring-bingo-pink/90">
             #{rank}
           </div>
 
           {/* Optional promo badge */}
           {shouldShowSpecialBadge && (
-            <div className="absolute top-0 left-10 bg-amber-500 text-slate-900 px-2 py-1 rounded-tr-xl rounded-br-md text-xs font-bold z-10">
+            <div className="absolute top-0 left-10 bg-bingo-purple text-white px-2 py-1 rounded-tr-xl rounded-br-md text-xs font-bold z-10">
               {getSpecialBadgeText()}
             </div>
           )}
@@ -254,7 +254,7 @@ export function Card({ site, rank }: SiteCardProps) {
                       key={i}
                       className={`w-4 h-4 ${
                         i < filledStars || (i === filledStars && hasHalfStar)
-                          ? "fill-yellow-400 text-yellow-400"
+                          ? "fill-bingo-pink text-bingo-pink"
                           : "text-gray-300"
                       }`}
                     />
@@ -264,14 +264,14 @@ export function Card({ site, rank }: SiteCardProps) {
 
               {/* Score - 12% */}
               <div className="flex-[0_0_12%] text-center px-1">
-                <div className="text-[40px] font-bold leading-none text-amber-500 tabular-nums">
+                <div className="text-[40px] font-bold leading-none text-bingo-pink tabular-nums">
                   {site.rating.toFixed(1)}
                 </div>
               </div>
 
               {/* Button - 13% */}
               <div className="flex-[0_0_13%] flex flex-col items-center justify-center text-center pl-1">
-                <Button className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-2 py-2 rounded-full text-xs w-full max-w-[100px] mx-auto transition-colors border border-amber-300/80">
+                <Button className="bg-bingo-pink hover:bg-bingo-pink-hover text-white font-bold px-2 py-2 rounded-full text-xs w-full max-w-[100px] mx-auto transition-colors border border-bingo-purple-light/50">
                   GET BONUS
                 </Button>
                 <UkLicensedCaption textClassName="text-[10px] text-slate-600 font-medium" flagPx={14} />
@@ -289,7 +289,7 @@ export function Card({ site, rank }: SiteCardProps) {
             {showReadMore && (
               <button
                 onClick={handleTermsClick}
-                className="text-gray-500 hover:text-amber-800 underline mt-1 text-[8px] font-medium"
+                className="text-gray-500 hover:text-bingo-purple-dark underline mt-1 text-[8px] font-medium"
               >
                 {isTermsExpanded ? "Read less" : "Read more"}
               </button>
@@ -304,13 +304,13 @@ export function Card({ site, rank }: SiteCardProps) {
       >
         <Link href={site.link} target="_blank" rel="noopener noreferrer" className="block">
           {/* Rank badge */}
-          <div className="absolute top-0 left-0 bg-slate-900 text-white px-2 py-0.5 rounded-tl-xl rounded-bl-md text-[10px] font-bold z-20 ring-2 ring-amber-500/90">
+          <div className="absolute top-0 left-0 bg-slate-900 text-white px-2 py-0.5 rounded-tl-xl rounded-bl-md text-[10px] font-bold z-20 ring-2 ring-bingo-pink/90">
             #{rank}
           </div>
 
           {/* Optional promo badge */}
           {shouldShowSpecialBadge && (
-            <div className="absolute top-0 left-8 bg-amber-500 text-slate-900 px-2 py-0.5 rounded-tr-xl rounded-br-md text-[10px] font-bold z-20">
+            <div className="absolute top-0 left-8 bg-bingo-purple text-white px-2 py-0.5 rounded-tr-xl rounded-br-md text-[10px] font-bold z-20">
               {getSpecialBadgeText()}
             </div>
           )}
@@ -335,7 +335,7 @@ export function Card({ site, rank }: SiteCardProps) {
                         key={i}
                         className={`w-4 h-4 ${
                           i < filledStars || (i === filledStars && hasHalfStar)
-                            ? "fill-yellow-400 text-yellow-400"
+                            ? "fill-bingo-pink text-bingo-pink"
                             : "text-gray-300"
                         }`}
                       />
@@ -350,7 +350,7 @@ export function Card({ site, rank }: SiteCardProps) {
 
                 {/* Right column: Score */}
                 <div className="flex flex-col items-center justify-center">
-                  <div className="text-3xl font-bold leading-none text-amber-500 tabular-nums">
+                  <div className="text-3xl font-bold leading-none text-bingo-pink tabular-nums">
                     {site.rating.toFixed(1)}
                   </div>
                   <div className="text-[10px] text-black font-bold mt-1">Our Score</div>
@@ -369,7 +369,7 @@ export function Card({ site, rank }: SiteCardProps) {
 
               {/* Button + UK licensed row (flag right, like reference) */}
               <div className="flex flex-col items-center justify-center mt-2 w-full">
-                <Button className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-3 py-1.5 rounded-full text-sm transition-colors w-full border border-amber-300/80">
+                <Button className="bg-bingo-pink hover:bg-bingo-pink-hover text-white font-bold px-3 py-1.5 rounded-full text-sm transition-colors w-full border border-bingo-purple-light/50">
                   GET BONUS
                 </Button>
                 <UkLicensedCaption textClassName="text-[10px] text-slate-700 font-medium" flagPx={14} />
@@ -391,7 +391,7 @@ export function Card({ site, rank }: SiteCardProps) {
             {showReadMore && (
               <button
                 onClick={handleTermsClick}
-                className="text-gray-500 hover:text-amber-800 underline text-[9px] font-medium"
+                className="text-gray-500 hover:text-bingo-purple-dark underline text-[9px] font-medium"
               >
                 {isTermsExpanded ? "Read less" : "Read more"}
               </button>

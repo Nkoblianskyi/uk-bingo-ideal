@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { ArrowLeft, Shield } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { SITE_DISPLAY_NAME, SITE_DOMAIN } from "@/lib/site"
 
 export default function TermsPage() {
   return (
@@ -43,14 +44,14 @@ export default function TermsPage() {
             <div className="prose max-w-none">
               <h2>1. Acceptance of Terms</h2>
               <p>
-                By accessing and using bestbritishbettingsites, you accept and agree to be bound by the terms and provision
-                of this agreement.
+                By accessing and using {SITE_DISPLAY_NAME} at {SITE_DOMAIN}, you accept and agree to be bound by the terms
+                and provision of this agreement.
               </p>
 
               <h2>2. Website Purpose</h2>
               <p>
-                This website provides information and reviews about betting sites aimed at users in the United Kingdom.
-                We are an independent comparison service and do not operate any gambling services ourselves.
+                This website provides information and reviews about UK online bingo rooms aimed at users in the United
+                Kingdom. We are an independent comparison service and do not operate any gambling services ourselves.
               </p>
 
               <h2>3. Age Restrictions</h2>
@@ -62,12 +63,12 @@ export default function TermsPage() {
               <h2>4. Information Accuracy</h2>
               <p>
                 While we strive to provide accurate and up-to-date information, we cannot guarantee the accuracy of all
-                content. Betting odds, bonuses, and terms may change without notice.
+                content. Bingo offers, bonuses, and terms may change without notice.
               </p>
 
               <h2>5. Third-Party Links</h2>
               <p>
-                Our website contains links to third-party betting sites. We are not responsible for the content, terms,
+                Our website contains links to third-party bingo operators. We are not responsible for the content, terms,
                 or practices of these external sites. Please review their terms and conditions before use.
               </p>
 
@@ -82,8 +83,8 @@ export default function TermsPage() {
 
               <h2>7. Intellectual Property</h2>
               <p>
-                All content on this website, including text, graphics, logos, and images, is the property of
-                bestbritishbettingsites and is protected by copyright laws.
+                All content on this website, including text, graphics, logos, and images, is the property of{" "}
+                {SITE_DISPLAY_NAME} ({SITE_DOMAIN}) and is protected by copyright laws.
               </p>
 
               <h2>8. Limitation of Liability</h2>
