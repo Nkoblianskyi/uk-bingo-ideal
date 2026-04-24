@@ -173,3 +173,17 @@ export const horizontalBanners: HorizontalBanner[] = [
       "18+ UK new customers only. Min deposit and wagering requirements apply. Bonus paid as free bets or bonus funds per offer rules. Payment method and market exclusions apply. Full T&Cs on the operator site. BeGambleAware.org",
   },
 ]
+
+/** Slug for `/go/<slug>` redirects — lowercase, non-alphanumeric → hyphen */
+function affiliateSlug(name: string): string {
+  return name
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+}
+
+/** GET /go/<slug> → operator URL (e.g. Keitaro can replace values in production) */
+export const affiliateLinks: Record<string, string> = Object.fromEntries(
+  bettingSites.map((site) => [affiliateSlug(site.name), site.link]),
+)
