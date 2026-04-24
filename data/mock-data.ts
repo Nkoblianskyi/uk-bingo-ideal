@@ -155,7 +155,7 @@ export const horizontalBanners: HorizontalBanner[] = [
     bonus: " ",
     welcomeOffer: "100% up to £100",
     link: "https://tonybet.co.uk",
-    backgroundImage: "/banner-hor.jpg",
+    backgroundImage: "/banner-bingo.webp",
     mobileBackgroundImage: "/banner-mobile.jpg",
     terms:
       "18+ UK new customers only. Min deposit and wagering requirements apply. Bonus paid as free bets or bonus funds per offer rules. Payment method and market exclusions apply. Full T&Cs on the operator site. BeGambleAware.org",
@@ -167,7 +167,7 @@ export const horizontalBanners: HorizontalBanner[] = [
     bonus: "",
     welcomeOffer: "100% up to £100",
     link: "https://tonybet.co.uk",
-    backgroundImage: "/banner-hor.jpg",
+    backgroundImage: "/banner-bingo.webp",
     mobileBackgroundImage: "/banner-mobile.jpg",
     terms:
       "18+ UK new customers only. Min deposit and wagering requirements apply. Bonus paid as free bets or bonus funds per offer rules. Payment method and market exclusions apply. Full T&Cs on the operator site. BeGambleAware.org",
